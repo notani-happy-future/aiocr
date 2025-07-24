@@ -1,8 +1,11 @@
+
 import torch
 import torchvision
 from torchvision import transforms
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.rcParams['font.family'] = 'Meiryo'  # または 'MS Gothic', 'Noto Sans CJK JP' など
 
 # 画像の前処理：Tensor化 + 正規化（0〜1 → -1〜1）
 transform = transforms.Compose([
